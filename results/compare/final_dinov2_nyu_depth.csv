@@ -1,0 +1,5 @@
+model,source,NYU RMSE,NYU RMSE (flip),"NYU RMSE (slide, TTA)"
+DINOv2 ViT-S/14 lin. 1,paper (Tab. 11),0.449,,
+DINOv2 ViT-S/14 lin. 4,paper (Tab. 11),0.417,,
+DINOv2 ViT-S/14 DPT,paper (Tab. 11),0.356,,
+"NYU run of this notebook, frame PE (superseded: NYU final = notebook 06 8-block arm)",measured,0.427 ± 0.0003,0.4209 ± 0.00062,0.417 ± 0.0007

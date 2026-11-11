@@ -1,0 +1,6 @@
+model,source,rmse,d1,abs_rel,rmse_log
+DINOv2 ViT-S/14 lin. 1,"paper, trained on ~24k NYU frames",0.477,,,
+DINOv2 ViT-S/14 lin. 4,"paper, trained on ~24k NYU frames",0.431,,,
+DINOv2 ViT-S/14 DPT,"paper, trained on ~24k NYU frames",0.409,,,
+"Ours (final, 3 seeds), raw",measured,0.6075 ± 0.0015,0.7531 ± 0.0012,0.2122 ± 0.0011,0.2437 ± 0.00042
+"Ours (final, 3 seeds), median-scaled",measured,0.5149 ± 0.0019,0.8412 ± 0.00063,0.1662 ± 0.00086,0.207 ± 0.0005

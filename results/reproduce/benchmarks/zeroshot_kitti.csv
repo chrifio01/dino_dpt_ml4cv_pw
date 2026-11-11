@@ -1,0 +1,7 @@
+model,source,d1,abs_rel,rmse,rmse_log
+DORN,"paper, trained on KITTI (DPT Tab. 3)",0.932,0.072,2.626,0.12
+VNL,"paper, trained on KITTI (DPT Tab. 3)",0.938,0.072,3.258,0.117
+BTS,"paper, trained on KITTI (DPT Tab. 3)",0.956,0.059,2.756,0.096
+DPT-Hybrid,"paper, trained on KITTI (DPT Tab. 3)",0.959,0.062,2.573,0.092
+"Ours (final, 3 seeds), zero-shot raw",measured,0.7682 ± 0.014,0.1511 ± 0.0012,3.34 ± 0.026,0.1883 ± 0.0017
+"Ours (final, 3 seeds), zero-shot median-scaled",measured,0.8951 ± 0.0046,0.1118 ± 0.0035,4.096 ± 0.076,0.1438 ± 0.0032

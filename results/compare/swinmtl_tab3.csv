@@ -1,0 +1,16 @@
+model,source,rmse,mIoU (paper: as reported; ours: standard),mIoU (ours: SwinMTL per-image)
+Cross-Stitch,paper,0.629,36.34,
+MTL,paper,0.638,39.44,
+PAD-Net,paper,0.627,36.61,
+3-ways,paper,0.622,39.47,
+[44],paper,0.604,38.93,
+MTAN,paper,0.5906,40.01,
+MTI-Net,paper,0.5365,45.97,
+ATRC,paper,0.5363,46.33,
+InvPT,paper,0.5183,53.56,
+TaskPrompter,paper,0.5152,55.3,
+SwinMTL,paper,0.5179,58.14,
+Mine-A (frozen),measured,0.4670769805914583,53.881649349108486,55.635394822211346
+Mine-A (frozen) +slide (TTA),"measured, TTA",0.4536522339334546,54.789796181659746,56.95459088357282
+Mine-B (partial FT),measured,0.43287105444784557,57.273413731302036,58.203315750698856
+Mine-B (partial FT) +slide (TTA),"measured, TTA",0.4208100444611606,59.00398251875968,60.55668790507987

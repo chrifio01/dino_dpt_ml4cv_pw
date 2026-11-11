@@ -1,0 +1,13 @@
+model,source,n_classes,mIoU,pixAcc
+Mine-A (frozen) [cityscapes->ade20k],zero-shot subset,15,57.75431038188293,86.98986412578793
+Mine-A (frozen) [cityscapes->voc2012],zero-shot subset,7,68.64942484395833,95.96713308927214
+Mine-A (frozen) [cityscapes->pcontext],zero-shot subset,14,54.04888720496438,75.3244617789777
+Mine-A (frozen) [nyu->ade20k],zero-shot subset,32,43.75765151626675,73.54270241767503
+Mine-A (frozen) [nyu->voc2012],zero-shot subset,6,42.63156638107732,89.68255686862126
+Mine-A (frozen) [nyu->pcontext],zero-shot subset,18,34.22729744879702,58.71522469842707
+Mine-B (partial FT) [cityscapes->ade20k],zero-shot subset,15,60.93939710575123,87.49635460607836
+Mine-B (partial FT) [cityscapes->voc2012],zero-shot subset,7,70.12384837666242,96.42409100513468
+Mine-B (partial FT) [cityscapes->pcontext],zero-shot subset,14,58.32451746688692,81.6623811420366
+Mine-B (partial FT) [nyu->ade20k],zero-shot subset,32,48.97759412737928,76.99025119004217
+Mine-B (partial FT) [nyu->voc2012],zero-shot subset,6,51.47432713124943,93.00039438147223
+Mine-B (partial FT) [nyu->pcontext],zero-shot subset,18,39.181479775188166,66.71429719167024

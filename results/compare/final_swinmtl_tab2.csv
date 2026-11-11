@@ -1,0 +1,9 @@
+model,source,rmse,mIoU (paper: as reported; ours: standard),mIoU (ours: SwinMTL per-image)
+Hybridnet,paper,12.09,66.61,
+MGMNet,paper,8.3,55.7,
+MTL,paper,6.797,70.43,
+PAD-Net,paper,6.777,70.23,
+3-ways,paper,6.528,75.0,
+[44],paper,6.649,74.95,
+SwinMTL,paper,6.352,76.41,
+"Final (mean ± std, 3 seeds)",measured,5.059 ± 0.019,77.74 ± 0.19,65.23 ± 0.017

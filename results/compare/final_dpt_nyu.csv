@@ -1,0 +1,7 @@
+model,source,d1,d2,d3,abs_rel,rmse,log10
+DORN,paper (Tab. 2),0.828,0.965,0.992,0.115,0.509,0.051
+VNL,paper (Tab. 2),0.875,0.976,0.994,0.111,0.416,0.048
+BTS,paper (Tab. 2),0.885,0.978,0.994,0.11,0.392,0.047
+DPT-Hybrid,paper (Tab. 2),0.904,0.988,0.998,0.11,0.357,0.045
+"NYU run of this notebook, frame PE (superseded: NYU final = notebook 06 8-block arm)",measured,0.8625 ± 0.00053,0.9822 ± 0.00064,0.9968 ± 6.6e-05,0.1216 ± 0.00035,0.427 ± 0.0003,0.05134 ± 0.00013
+"NYU run of this notebook, frame PE (superseded: NYU final = notebook 06 8-block arm) +flip (TTA)","measured, TTA",0.8662 ± 0.00093,0.9829 ± 0.00086,0.9969 ± 0.00013,0.1199 ± 0.00024,0.4209 ± 0.00062,0.05066 ± 5.6e-05

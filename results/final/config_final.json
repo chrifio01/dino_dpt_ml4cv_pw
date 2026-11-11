@@ -1,0 +1,13 @@
+{
+  "blocks": 8,
+  "use_critic": false,
+  "frame_pe": true,
+  "photo_rng_fix": true,
+  "depth_param": "linear",
+  "nyu_scale_aug": [
+    1.0,
+    1.5
+  ],
+  "nyu_crop": null,
+  "nyu_rotate_deg": 0.0
+}

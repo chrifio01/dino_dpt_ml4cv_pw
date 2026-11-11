@@ -1,0 +1,12 @@
+model,source,rmse,mIoU (paper: as reported; ours: standard),mIoU (ours: SwinMTL per-image)
+Hybridnet,paper,12.09,66.61,
+MGMNet,paper,8.3,55.7,
+MTL,paper,6.797,70.43,
+PAD-Net,paper,6.777,70.23,
+3-ways,paper,6.528,75.0,
+[44],paper,6.649,74.95,
+SwinMTL,paper,6.352,76.41,
+Mine-A (frozen),measured,5.692562573432922,74.99013827518675,63.659062587260976
+Mine-A (frozen) +slide (TTA),"measured, TTA",5.2794158165454865,76.12940271414338,65.47604670664794
+Mine-B (partial FT),measured,5.452603140354157,77.26355514506679,64.55934140695283
+Mine-B (partial FT) +slide (TTA),"measured, TTA",4.8928709675073625,79.21114117920416,66.93277190370759

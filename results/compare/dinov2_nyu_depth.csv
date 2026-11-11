@@ -1,0 +1,6 @@
+model,source,NYU RMSE,"NYU RMSE (flip, TTA)","NYU RMSE (slide, TTA)"
+DINOv2 ViT-S/14 lin. 1,paper (Tab. 11),0.449,,
+DINOv2 ViT-S/14 lin. 4,paper (Tab. 11),0.417,,
+DINOv2 ViT-S/14 DPT,paper (Tab. 11),0.356,,
+Mine-A (frozen),measured,0.4670769805914583,0.4596938930839209,0.4536522339334546
+Mine-B (partial FT),measured,0.43287105444784557,0.4254551875413558,0.4208100444611606

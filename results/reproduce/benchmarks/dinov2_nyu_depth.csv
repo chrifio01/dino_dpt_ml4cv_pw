@@ -1,0 +1,5 @@
+model,source,RMSE,RMSE flip (TTA),RMSE sliding (TTA)
+DINOv2 ViT-S/14 lin. 1,paper,0.449,,
+DINOv2 ViT-S/14 lin. 4,paper,0.417,,
+DINOv2 ViT-S/14 DPT,paper,0.356,,
+"Ours (final, 3 seeds)",measured,0.4197 ± 0.0013,0.4136 ± 0.0013,0.4096 ± 0.00084

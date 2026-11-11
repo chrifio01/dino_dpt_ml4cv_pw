@@ -1,0 +1,33 @@
+# ML4CV project (DINOv2 + DPT multi-task) - Python 3.14, versions used for all runs (2026-11).
+# Install:  pip install -r requirements.txt
+# PyTorch with CUDA 12.8 wheels; for another CUDA version change the index URL (https://pytorch.org/get-started/).
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+torchvision==0.26.0
+
+# data pipeline, augmentations (SwinMTL's photometric transforms), NYUv2 .mat files, Cityscapes labels
+albumentations==2.0.8
+opencv-python-headless==5.0.0.93
+h5py==3.16.0
+scipy==1.18.1
+numpy==2.5.4
+pillow==13.0.0
+cityscapesScripts==2.3.0
+
+# logging, tables, plots
+pandas==3.1.0
+matplotlib==3.11.2
+tensorboard==2.21.0
+tqdm==4.70.1
+torchinfo==1.8.0
+
+# downloads (data preparation, experiments/01 only): Cityscapes login, CREStereo weights on Google Drive
+requests==2.34.2
+gdown==6.5.1
+
+# running the notebooks (Jupyter kernel, headless execution)
+ipykernel==7.4.0
+papermill==2.7.0
+
+# not installed with pip: dinov2/, DPT/, SwinMTL/ are cloned next to mtl_common.py (see README);
+# CREStereo-Pytorch is cloned automatically by experiments/01_data.ipynb.

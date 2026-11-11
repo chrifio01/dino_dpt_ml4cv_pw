@@ -1,0 +1,8 @@
+model,source,NYU RMSE,"NYU RMSE (flip, TTA)","NYU RMSE (slide, TTA)"
+DINOv2 ViT-S/14 lin. 1,"paper (Tab. 11), ≈ 24k frames",0.449,,
+DINOv2 ViT-S/14 lin. 4,"paper (Tab. 11), ≈ 24k frames",0.417,,
+DINOv2 ViT-S/14 DPT,"paper (Tab. 11), ≈ 24k frames",0.356,,
+"Mine-Final (mean ± std, 3 seeds)","measured, 795 images",0.4197 ± 0.0013,0.4136 ± 0.0013,0.4096 ± 0.00084
+"Mine-D1 (DINOv2 setup: frozen + DPT, depth only) [ablation]","measured, 795 images, 1 seed",0.4199189636799356,0.41456969499314594,0.41439336627174955
+Mine-A (frozen) [ablation],"measured, 795 images, 1 seed",0.4670769805914583,0.4596938930839209,0.4536522339334546
+Mine-B (4 blocks + critic) [ablation],"measured, 795 images, 1 seed",0.43287105444784557,0.4254551875413558,0.4208100444611606

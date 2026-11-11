@@ -1,0 +1,174 @@
+[
+  {
+    "decision": "critic",
+    "adopted": "off",
+    "reason": "kept off unless removing it is harmful (1.8x cheaper)",
+    "evidence": [
+      {
+        "change": "critic off (E2 vs B)",
+        "dataset": "nyu",
+        "base_depth": 0.43287105444784557,
+        "new_depth": 0.42821384662198364,
+        "base_mIoU": 57.273413731302036,
+        "new_mIoU": 57.391201245834075,
+        "z_depth": 1.5524026086206437,
+        "z_seg": 0.5889375726601997,
+        "better": false,
+        "harm": false,
+        "kind": "standard"
+      }
+    ]
+  },
+  {
+    "decision": "trainable blocks",
+    "adopted": 8,
+    "reason": "8 only if better by >= 2.5 sigma without harm, else the cheaper 4",
+    "evidence": [
+      {
+        "change": "8 vs 4 blocks (means of 3 vs 3 seeds)",
+        "dataset": "nyu",
+        "base_depth": 0.42971456175808637,
+        "new_depth": 0.41974192074330086,
+        "base_mIoU": 57.39085242857103,
+        "new_mIoU": 58.09565436807026,
+        "z_depth": 3.32421367159517,
+        "z_seg": 3.5240096974961332,
+        "better": true,
+        "harm": false,
+        "kind": "standard"
+      }
+    ]
+  },
+  {
+    "decision": "rescale / crop (AUG-A vs AUG-B)",
+    "adopted": "unchanged [1, 1.5], crop 476x630",
+    "reason": "neither passed the rule (or missing)",
+    "evidence": [
+      {
+        "change": "AUG-A vs 8-block baseline",
+        "dataset": "nyu",
+        "base_depth": 0.42049394412370633,
+        "new_depth": 0.4365194598697012,
+        "base_mIoU": 58.24903646951526,
+        "new_mIoU": 56.45181349411441,
+        "z_depth": -5.341838581998289,
+        "z_seg": -8.986114877004248,
+        "better": false,
+        "harm": true,
+        "kind": "standard"
+      },
+      {
+        "change": "AUG-B vs 8-block baseline",
+        "dataset": "nyu",
+        "base_depth": 0.42049394412370633,
+        "new_depth": 0.42437411906248934,
+        "base_mIoU": 58.24903646951526,
+        "new_mIoU": 58.63936616033426,
+        "z_depth": -1.2933916462610033,
+        "z_seg": 1.9516484540950074,
+        "better": false,
+        "harm": false,
+        "kind": "standard"
+      }
+    ]
+  },
+  {
+    "decision": "rotation (AUG-C)",
+    "adopted": 0.0,
+    "reason": "adopted only if it passes the rule",
+    "evidence": [
+      {
+        "change": "AUG-C vs 8-block baseline",
+        "dataset": "nyu",
+        "base_depth": 0.42049394412370633,
+        "new_depth": 0.4183038454787629,
+        "base_mIoU": 58.24903646951526,
+        "new_mIoU": 58.172872222183244,
+        "z_depth": 0.7300328816478019,
+        "z_seg": -0.3808212366600827,
+        "better": false,
+        "harm": false,
+        "kind": "standard"
+      }
+    ]
+  },
+  {
+    "decision": "photometric RNG fix (AUG-D)",
+    "adopted": true,
+    "reason": "bug fix: adopted unless harmful",
+    "evidence": [
+      {
+        "change": "AUG-D vs 8-block baseline",
+        "dataset": "nyu",
+        "base_depth": 0.42049394412370633,
+        "new_depth": 0.420459679427588,
+        "base_mIoU": 58.24903646951526,
+        "new_mIoU": 58.13190356977428,
+        "z_depth": 0.011421565372778572,
+        "z_seg": -0.5856644987049009,
+        "better": false,
+        "harm": false,
+        "kind": "standard"
+      }
+    ]
+  },
+  {
+    "decision": "frame-consistent position embeddings",
+    "adopted": true,
+    "reason": "user decision (2026-11-04): both datasets; NYU ablation in notebook 10",
+    "evidence": []
+  },
+  {
+    "decision": "depth output (LOG)",
+    "adopted": "linear",
+    "reason": "log adopted if better on one dataset and harmful on none",
+    "evidence": [
+      {
+        "change": "log-space depth output vs linear",
+        "dataset": "nyu",
+        "base_depth": 0.4271116471800965,
+        "new_depth": 0.42642148064637403,
+        "base_mIoU": 57.394232005630265,
+        "new_mIoU": 57.69849411157961,
+        "z_depth": 0.23005551124081572,
+        "z_seg": 1.5213105297467422,
+        "better": false,
+        "harm": false,
+        "kind": "standard"
+      },
+      {
+        "change": "log-space depth output vs linear",
+        "dataset": "cityscapes",
+        "base_depth": 0.10585151975601911,
+        "new_depth": 0.10894902960956096,
+        "base_mIoU": 77.9467991354069,
+        "new_mIoU": 77.76295855221426,
+        "z_depth": -2.926278111718571,
+        "z_seg": -0.9192029159632398,
+        "better": false,
+        "harm": true,
+        "kind": "standard"
+      }
+    ]
+  },
+  {
+    "decision": "combined check",
+    "adopted": "WARNING: combined config worse than the baseline",
+    "reason": "no decision: confirms that the adopted changes still help together",
+    "evidence": [
+      {
+        "change": "combined final config vs 8-block baseline (NYU, seed 42)",
+        "dataset": "nyu",
+        "base_depth": 0.42049394412370633,
+        "new_depth": 0.4271116471800965,
+        "base_mIoU": 58.24903646951526,
+        "new_mIoU": 57.394232005630265,
+        "z_depth": -2.205901018796715,
+        "z_seg": -4.274022319424979,
+        "better": false,
+        "harm": true,
+        "kind": "check"
+      }
+    ]
+  }
+]

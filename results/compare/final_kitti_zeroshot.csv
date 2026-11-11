@@ -1,0 +1,12 @@
+model,source,d1,d2,d3,abs_rel,rmse,rmse_log
+DORN,"paper, in-domain (DPT Tab. 3)",0.932,0.984,0.994,0.072,2.626,0.12
+VNL,"paper, in-domain (DPT Tab. 3)",0.938,0.99,0.998,0.072,3.258,0.117
+BTS,"paper, in-domain (DPT Tab. 3)",0.956,0.993,0.998,0.059,2.756,0.096
+DPT-Hybrid,"paper, in-domain (DPT Tab. 3)",0.959,0.995,0.999,0.062,2.573,0.092
+DINOv2 ViT-S/14 DPT,"paper, in-domain (Tab. 11)",,,,,2.34,
+"Mine-Final (mean ± std, 3 seeds) (zero-shot raw)",measured,0.7682 ± 0.014,0.9811 ± 0.0016,0.9964 ± 0.00036,0.1511 ± 0.0012,3.34 ± 0.026,0.1883 ± 0.0017
+"Mine-Final (mean ± std, 3 seeds) (zero-shot median-scaled)",measured,0.8951 ± 0.0046,0.9851 ± 0.00056,0.9969 ± 0.00011,0.1118 ± 0.0035,4.096 ± 0.076,0.1438 ± 0.0032
+Mine-A (frozen) [ablation] (zero-shot raw),"measured, 1 seed",0.8647381918836226,0.9797295597981821,0.9958335397067977,0.12198187675944135,3.7689810870615252,0.15841499502353507
+Mine-A (frozen) [ablation] (zero-shot median-scaled),"measured, 1 seed",0.8838037835674052,0.9844999581209721,0.9968811780031474,0.11443399156849443,3.7794053066361903,0.14848742950593402
+Mine-B (4 blocks + critic) [ablation] (zero-shot raw),"measured, 1 seed",0.8577070910415036,0.9823290517359423,0.9965426936471389,0.12485362374526592,3.9506916102090495,0.15563404414962773
+Mine-B (4 blocks + critic) [ablation] (zero-shot median-scaled),"measured, 1 seed",0.9058056707762502,0.9885972704441269,0.9977942309313756,0.10358474974983309,3.6772054499643714,0.1360868162652649

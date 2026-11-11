@@ -1,0 +1,10 @@
+**/__pycache__/
+archives/
+data/
+ckpt/
+dinov2/
+DPT/
+**_runs/
+SwinMTL/
+**.pdf
+notes.txt

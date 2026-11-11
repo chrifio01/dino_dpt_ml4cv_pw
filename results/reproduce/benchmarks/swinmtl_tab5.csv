@@ -1,0 +1,6 @@
+model,source,FLOPs (G),params (M),trainable (M),FPS
+TaskPrompter,paper,416.0,373.0,,
+ATRC w/ ViT-B,paper,260.0,119.0,,
+PAD-Net w/ ViT-B,paper,166.0,109.0,,
+SwinMTL w/ Swin-B,paper,65.0,87.38,,
+Ours (8 blocks),measured @ 512x1024,475.667838976,37.806665,29.952713,24.593985323728763

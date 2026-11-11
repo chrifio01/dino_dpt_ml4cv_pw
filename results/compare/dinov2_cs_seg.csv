@@ -1,0 +1,4 @@
+model,source,CS mIoU (single-scale / lin.),CS mIoU (+ms),"CS mIoU (slide, TTA)"
+DINOv2 ViT-S/14,paper (Tab. 10),66.6,77.1,
+Mine-A (frozen),measured,74.99013827518675,76.22791681083157,76.12940271414338
+Mine-B (partial FT),measured,77.26355514506679,78.80746596214821,79.21114117920416

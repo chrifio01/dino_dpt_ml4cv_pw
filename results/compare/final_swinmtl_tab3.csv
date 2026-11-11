@@ -1,0 +1,14 @@
+model,source,rmse,mIoU (paper: as reported; ours: standard),mIoU (ours: SwinMTL per-image)
+Cross-Stitch,paper,0.629,36.34,
+MTL,paper,0.638,39.44,
+PAD-Net,paper,0.627,36.61,
+3-ways,paper,0.622,39.47,
+[44],paper,0.604,38.93,
+MTAN,paper,0.5906,40.01,
+MTI-Net,paper,0.5365,45.97,
+ATRC,paper,0.5363,46.33,
+InvPT,paper,0.5183,53.56,
+TaskPrompter,paper,0.5152,55.3,
+SwinMTL,paper,0.5179,58.14,
+"NYU run of this notebook, frame PE (superseded: NYU final = notebook 06 8-block arm)",measured,0.427 ± 0.0003,57.36 ± 0.048,58.06 ± 0.16
+"NYU run of this notebook, frame PE (superseded: NYU final = notebook 06 8-block arm) +slide (TTA)","measured, TTA",0.417 ± 0.0007,58.85 ± 0.13,
