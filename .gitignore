@@ -7,5 +7,6 @@ DPT/
 **_runs/
 SwinMTL/
 **.pdf
+!/report.pdf
 notes.txt
 report/
